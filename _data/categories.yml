@@ -1,0 +1,24 @@
+- id: development
+  name: 개발
+  description: 구현 과정과 배운 개념을 코드와 함께 정리합니다.
+  url: /categories/development/
+- id: ctf-wargame
+  name: CTF/Wargame
+  description: 문제 접근법과 풀이 과정을 재현 가능하게 남깁니다.
+  url: /categories/ctf-wargame/
+- id: bugbounty
+  name: BugbBounty
+  description: 취약점 탐색, 검증과 제보 과정을 기록합니다.
+  url: /categories/bugbounty/
+- id: blog-docs
+  name: 블로그/기술문서
+  description: 블로그 운영과 읽기 좋은 문서 작성법을 다룹니다.
+  url: /categories/blog-docs/
+- id: papers-conferences
+  name: 논문/컨퍼런스
+  description: 논문과 발표에서 얻은 핵심 내용을 정리합니다.
+  url: /categories/papers-conferences/
+- id: contests-certifications
+  name: 공모전/자격증
+  description: 준비 과정, 학습 계획과 회고를 모읍니다.
+  url: /categories/contests-certifications/
