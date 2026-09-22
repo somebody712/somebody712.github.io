@@ -1,5 +1,5 @@
-title: somebody712.log
-description: 개발, 보안, 연구와 도전의 과정을 기록합니다.
+title: somebody712 | Portfolio
+description: somebody712의 활동, 경력, 프로젝트 포트폴리오.
 lang: ko-KR
 url: "https://somebody712.github.io"
 baseurl: ""
@@ -15,3 +15,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - .github
+  - _posts
+  - categories
+  - archive.md
+  - about.md
+  - feed.xml
