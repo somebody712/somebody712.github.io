@@ -1,0 +1,17 @@
+title: somebody712.log
+description: 개발, 보안, 연구와 도전의 과정을 기록합니다.
+lang: ko-KR
+url: "https://somebody712.github.io"
+baseurl: ""
+timezone: Asia/Seoul
+permalink: /:year/:month/:day/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+excerpt_separator: "<!--more-->"
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .github
