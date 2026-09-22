@@ -1,0 +1,15 @@
+name: somebody712
+headline: 개발과 보안의 문제를 탐구하고 구현합니다.
+intro: 작업의 목적과 과정을 분명하게 기록합니다. 이곳에 활동, 경력, 프로젝트를 간결하게 정리합니다.
+github: https://github.com/somebody712
+
+# 새 경력과 활동은 아래 목록에 추가합니다. 비어 있으면 사이트에서 섹션이 숨겨집니다.
+experience: []
+activities: []
+
+projects:
+  - title: i-Keeper_reCAPTCHA
+    period: "2026"
+    description: Flask 서버에서 reCAPTCHA v2 응답을 검증하는 예제입니다. 비밀 키는 서버 환경 변수로 관리합니다.
+    stack: Python · Flask · JavaScript
+    url: https://github.com/somebody712/i-Keeper_reCAPTCHA
