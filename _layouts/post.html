@@ -1,18 +1,10 @@
 ---
 layout: default
 ---
-<article class="shell post-page">
-  <a class="back-link" href="{{ '/archive/' | relative_url }}">← 글 목록으로</a>
-  <header class="post-header">
-    {% assign current_category = site.data.categories | where: 'id', page.category | first %}
-    <p class="eyebrow">글 / {{ page.date | date: '%Y. %m. %d.' }}</p>
-    <h1>{{ page.title | escape }}</h1>
-    {% if page.description %}<p class="post-description">{{ page.description | escape }}</p>{% endif %}
-    {% if current_category %}<a class="category-pill" href="{{ current_category.url | relative_url }}">{{ current_category.name }}</a>{% endif %}
-  </header>
+<article class="article">
+  <a class="back" href="{{ '/' | relative_url }}">← 기록</a>
+  <p class="article-meta">{{ page.date | date: '%Y. %m. %d.' }}{% if page.category %} · {{ page.category }}{% endif %}</p>
+  <h1>{{ page.title | escape }}</h1>
+  {% if page.description %}<p class="lead">{{ page.description | escape }}</p>{% endif %}
   <div class="prose">{{ content }}</div>
-  <div class="post-end">
-    <span>끝까지 읽어주셔서 감사합니다.</span>
-    <a href="{{ '/archive/' | relative_url }}">다른 글 보기 →</a>
-  </div>
 </article>

@@ -1,27 +1,8 @@
 ---
 layout: default
 ---
-{% assign category = site.data.categories | where: 'id', page.category_id | first %}
-{% assign category_posts = site.posts | where: 'category', page.category_id %}
-<section class="shell standard-page category-page">
-  <a class="back-link" href="{{ '/categories/' | relative_url }}">← 전체 카테고리</a>
-  <div class="category-page-header">
-    <p class="eyebrow">카테고리 / {{ page.category_number }}</p>
-    <h1>{{ category.name }}<span class="heading-period">.</span></h1>
-    <p class="page-lead">{{ category.description }}</p>
-    <span class="category-total">글 {{ category_posts.size }}개</span>
-  </div>
-  {% if category_posts.size > 0 %}
-  <div class="archive-list">
-    {% for post in category_posts %}
-    <article class="archive-item">
-      <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%Y. %m. %d.' }}</time>
-      <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
-      <span aria-hidden="true">↗</span>
-    </article>
-    {% endfor %}
-  </div>
-  {% else %}
-  <p class="empty-message">아직 이 카테고리에 글이 없습니다. 곧 새로운 기록이 올라올 예정입니다.</p>
-  {% endif %}
+{% assign matched = site.posts | where: 'category_slug', page.category_slug %}
+<section class="page-title"><a class="back" href="{{ '/categories/' | relative_url }}">← 카테고리</a><h1>{{ page.title }}</h1><p>글 {{ matched.size }}개</p></section>
+<section class="posts category-posts">
+  {% if matched.size > 0 %}<div class="post-list">{% for post in matched %}<article class="post-row"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%Y. %m. %d.' }}</time><div><h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>{% if post.description %}<p>{{ post.description | escape }}</p>{% endif %}</div></article>{% endfor %}</div>{% else %}<p class="empty">아직 기록이 없습니다.</p>{% endif %}
 </section>
