@@ -1,22 +1,33 @@
-title: somebody712 | Portfolio
-description: somebody712의 활동, 경력, 프로젝트 포트폴리오.
-lang: ko-KR
+title: somebody712 기록
+description: 배운 것과 한 일을 기록합니다.
 url: "https://somebody712.github.io"
 baseurl: ""
+lang: ko-KR
 timezone: Asia/Seoul
-permalink: /:year/:month/:day/:title/
+permalink: /posts/:title/
 markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-excerpt_separator: "<!--more-->"
+highlighter: rouge
+plugins:
+  - jekyll-seo-tag
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
 exclude:
   - README.md
+  - POST_TEMPLATE.md
   - Gemfile
   - Gemfile.lock
-  - .github
-  - _posts
-  - categories
-  - archive.md
   - about.md
+  - archive.md
   - feed.xml
+  - categories/index.md
+  - _data/portfolio.yml
+  - _posts/2026-09-21-hello-markdown.md
+  - _posts/2026-09-22-bugbounty-report.md
+  - _posts/2026-09-22-contest-study-log.md
+  - _posts/2026-09-22-ctf-writeup.md
+  - _posts/2026-09-22-development-notes.md
+  - _posts/2026-09-22-paper-reading.md
