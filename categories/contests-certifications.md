@@ -1,7 +1,6 @@
 ---
 layout: category
-title: 공모전/자격증
-category_id: contests-certifications
-category_number: "06"
+title: 공모전 / 자격증
+category_slug: contests-certifications
 permalink: /categories/contests-certifications/
 ---

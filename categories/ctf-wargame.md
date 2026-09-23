@@ -1,7 +1,6 @@
 ---
 layout: category
-title: CTF/Wargame
-category_id: ctf-wargame
-category_number: "02"
+title: CTF / Wargame
+category_slug: ctf-wargame
 permalink: /categories/ctf-wargame/
 ---
