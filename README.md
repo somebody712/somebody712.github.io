@@ -32,7 +32,7 @@ category_slug: development
 | --- | --- | --- |
 | 개발 | 개발 | `development` |
 | CTF / Wargame | CTF / Wargame | `ctf-wargame` |
-| BugbBounty | BugbBounty | `bugbounty` |
+| Bug Bounty | Bug Bounty | `bugbounty` |
 | 블로그 / 기술문서 | 블로그 / 기술문서 | `blog-docs` |
 | 논문 / 컨퍼런스 | 논문 / 컨퍼런스 | `papers-conferences` |
 | 공모전 / 자격증 | 공모전 / 자격증 | `contests-certifications` |
