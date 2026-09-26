@@ -1,6 +1,6 @@
 ---
 layout: category
-title: BugbBounty
+title: Bug Bounty
 category_slug: bugbounty
 permalink: /categories/bugbounty/
 ---
