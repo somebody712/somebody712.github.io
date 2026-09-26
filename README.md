@@ -1,6 +1,6 @@
 # somebody712.github.io
 
-배운 것과 한 일을 정리하는 Markdown 블로그입니다.
+Markdown으로 글을 작성하는 포트폴리오입니다.
 
 공개 주소: <https://somebody712.github.io/>
 
